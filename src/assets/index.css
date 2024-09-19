@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* begin::Navigation Bar */
+.navigation-bar {
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  z-index: 10;
+}
+
+.navigation-bar #addFeatureBtn.active {
+  background-color: var(--danger) !important;
+}
+.navigation-bar #addFeatureBtn.active i {
+  transform: rotate(45deg) !important;
+}
+
+.navigation-bar .dropdown {
+  height: 75px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 200ms;
+}
+.navigation-bar .dropdown.show {
+  height: 200px;
+}
+
+.navigation-bar .dropdown-toggle {
+  width: 55px;
+  height: 55px;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.navigation-bar .dropdown-toggle.active {
+  background-color: var(--light);
+}
+.navigation-bar .dropdown-toggle:hover .bar {
+  width: 25px;
+}
+.navigation-bar .dropdown-toggle.active .bar {
+  width: 25px;
+  background: var(--primary);
+}
+.navigation-bar .dropdown-toggle.active .bar:first-child {
+  transform: translateY(7px) rotate(45deg);
+}
+.navigation-bar .dropdown-toggle.active .bar:nth-child(2) {
+  transform: scale(0);
+}
+.navigation-bar .dropdown-toggle.active .bar:last-child {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.navigation-bar .bar {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s ease-in-out;
+}
+.navigation-bar .bar:nth-child(2) {
+  width: 20px;
+  margin: 5px 0;
+}
+.navigation-bar .bar:last-child {
+  width: 15px;
+}
+
+.navigation-bar .dropdown-menu {
+  margin-top: 20px;
+  transition: 200ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* end::Navigation Bar */
+
+#map {
+  width: 100%;
+  height: 100vh;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+}
+.popup.show {
+  display: block;
+}
+
+#mapFeaturePopup {
+  top: -15px;
+  left: 20px;
+  width: 350px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+#mapFeaturePopup .popup-header {
+  position: relative;
+  padding: 10px;
+  background-color: var(--primary);
+  border-bottom: 1px solid #ccc;
+  color: var(--light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 5px;
+}
+#mapFeaturePopup .popup-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid var(--primary);
+  border-bottom: 10px solid transparent;
+}
+
+#mapFeaturePopup .popup-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#mapFeaturePopup .close-btn {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#mapFeaturePopup .popup-body {
+  padding: 10px;
+  color: #333;
+}
+
+#mapFeaturePopup .popup-body p {
+  margin: 5px 0;
+}
+
+.data-table {
+  text-align: start;
+}
+
+.toast {
+  position: fixed;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #75f878;
+  color: #656565;
+  padding: 14px 18px;
+  border-radius: 5px;
+  width: auto;
+  box-shadow: 0 1px 5px #a2a2a2;
+  pointer-events: none;
+  transition: 200ms;
+}
+.toast.active {
+  top: 15px;
+  pointer-events: unset;
+}
+
+.loader {
+  border: 10px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  inset: -10px;
+  border-radius: 50%;
+  border: 10px solid #0091ff;
+  animation: prixClipFix 1s infinite linear;
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+.ag-theme-alpine {
+  /* height: 500px; */
+  text-align: start;
+  text-wrap: wrap;
+}

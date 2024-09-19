@@ -1,0 +1,949 @@
+:root {
+  --primary: #2d3250;
+  --secondary: #424769;
+  --light: #e4e4e4;
+  --danger: #d12626;
+  --warning: #ed852a;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*! begin::Background Color */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-danger {
+  background-color: var(--danger);
+}
+
+.bg-warning {
+  background-color: var(--warning);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+/*! end::Background Color */
+
+/*! begin::FontSize */
+/* Font size sınıfları */
+.fs-1 {
+  font-size: 0.75rem; /* 12px */
+}
+
+.fs-2 {
+  font-size: 0.875rem; /* 14px */
+}
+
+.fs-3 {
+  font-size: 1rem; /* 16px */
+}
+
+.fs-4 {
+  font-size: 1.25rem; /* 20px */
+}
+
+.fs-5 {
+  font-size: 1.5rem; /* 24px */
+}
+
+.fs-6 {
+  font-size: 1.75rem; /* 28px */
+}
+
+.fs-7 {
+  font-size: 2rem; /* 32px */
+}
+
+.fs-8 {
+  font-size: 2.25rem; /* 36px */
+}
+
+.fs-9 {
+  font-size: 2.5rem; /* 40px */
+}
+
+.fs-10 {
+  font-size: 3rem; /* 48px */
+}
+/*! end::FontSize */
+
+/*! begin::Padding */
+/* Genel padding sınıfları */
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 0.25rem; /* 4px */
+}
+
+.p-2 {
+  padding: 0.5rem; /* 8px */
+}
+
+.p-3 {
+  padding: 1rem; /* 16px */
+}
+
+.p-4 {
+  padding: 1.5rem; /* 24px */
+}
+
+.p-5 {
+  padding: 2rem; /* 32px */
+}
+
+/* Yön bazlı padding sınıfları */
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-4 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-5 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-5 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Tek yön padding sınıfları */
+.pt-0 {
+  padding-top: 0;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-3 {
+  padding-top: 1rem;
+}
+
+.pt-4 {
+  padding-top: 1.5rem;
+}
+
+.pt-5 {
+  padding-top: 2rem;
+}
+
+.pe-0 {
+  padding-right: 0;
+}
+
+.pe-1 {
+  padding-right: 0.25rem;
+}
+
+.pe-2 {
+  padding-right: 0.5rem;
+}
+
+.pe-3 {
+  padding-right: 1rem;
+}
+
+.pe-4 {
+  padding-right: 1.5rem;
+}
+
+.pe-5 {
+  padding-right: 2rem;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 2rem;
+}
+
+.ps-0 {
+  padding-left: 0;
+}
+
+.ps-1 {
+  padding-left: 0.25rem;
+}
+
+.ps-2 {
+  padding-left: 0.5rem;
+}
+
+.ps-3 {
+  padding-left: 1rem;
+}
+
+.ps-4 {
+  padding-left: 1.5rem;
+}
+
+.ps-5 {
+  padding-left: 2rem;
+}
+/*! end::Padding */
+
+/*! begin::Margin */
+/* Genel margin sınıfları */
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 0.25rem; /* 4px */
+}
+
+.m-2 {
+  margin: 0.5rem; /* 8px */
+}
+
+.m-3 {
+  margin: 1rem; /* 16px */
+}
+
+.m-4 {
+  margin: 1.5rem; /* 24px */
+}
+
+.m-5 {
+  margin: 2rem; /* 32px */
+}
+
+/* Yön bazlı margin sınıfları */
+.mx-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-4 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-5 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-5 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Tek yön margin sınıfları */
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 2rem;
+}
+
+.me-0 {
+  margin-right: 0;
+}
+
+.me-1 {
+  margin-right: 0.25rem;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+.me-3 {
+  margin-right: 1rem;
+}
+
+.me-4 {
+  margin-right: 1.5rem;
+}
+
+.me-5 {
+  margin-right: 2rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 2rem;
+}
+
+.ms-0 {
+  margin-left: 0;
+}
+
+.ms-1 {
+  margin-left: 0.25rem;
+}
+
+.ms-2 {
+  margin-left: 0.5rem;
+}
+
+.ms-3 {
+  margin-left: 1rem;
+}
+
+.ms-4 {
+  margin-left: 1.5rem;
+}
+
+.ms-5 {
+  margin-left: 2rem;
+}
+/*! end::Margin */
+
+/*! begin::Button */
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  opacity: 0.8;
+}
+.btn-icon i {
+  font-size: 20px;
+  transition: 200ms;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--light);
+  border: 1px solid var(--primary);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--light);
+  border: 1px solid var(--secondary);
+}
+
+/* Light Button */
+.btn-light {
+  background-color: var(--light);
+  color: var(--primary);
+  border: 1px solid var(--light);
+}
+
+/* Danger Button */
+.btn-danger {
+  background-color: var(--danger);
+  color: var(--light);
+  border: 1px solid var(--danger);
+}
+
+/* Warning Button */
+.btn-warning {
+  background-color: var(--warning);
+  color: var(--light);
+  border: 1px solid var(--warning);
+}
+
+/* Buton boyutları */
+.btn-xs {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+.btn-sm {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.btn-md {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.btn-xl {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  border-radius: 0.35rem;
+}
+
+/* Butonları blok halinde göstermek */
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Butonlarda ikon kullanımı için temel stil */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon .icon {
+  margin-right: 0.5rem; /* İkonun metinden önce olması durumunda sağa boşluk bırakır */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-icon.icon-right .icon {
+  margin-right: 0;
+  margin-left: 0.5rem; /* İkonun metinden sonra olması durumunda sola boşluk bırakır */
+}
+
+/* İkonun buton içindeki boyutlarını ayarlamak için */
+.btn-icon .icon-xs {
+  font-size: 0.75rem;
+}
+
+.btn-icon .icon-sm {
+  font-size: 0.875rem;
+}
+
+.btn-icon .icon-md {
+  font-size: 1rem;
+}
+
+.btn-icon .icon-lg {
+  font-size: 1.25rem;
+}
+
+.btn-icon .icon-xl {
+  font-size: 1.5rem;
+}
+/*! end::Button */
+
+/*! begin::FlexBox */
+/* Flex container oluşturma */
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+/* Flex yönünü belirleme */
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* Flex sarmalama kontrolü */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* İçerik hizalama (ana eksen - justify-content) */
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* Öğeleri hizalama (çapraz eksen - align-items) */
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+/* İçerik hizalama (çapraz eksen - align-content) */
+.content-start {
+  align-content: flex-start;
+}
+
+.content-end {
+  align-content: flex-end;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.content-between {
+  align-content: space-between;
+}
+
+.content-around {
+  align-content: space-around;
+}
+
+.content-stretch {
+  align-content: stretch;
+}
+
+/* Bireysel öğe hizalaması (align-self) */
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-baseline {
+  align-self: baseline;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+/* Flex büyüme oranı (flex-grow) */
+.grow-0 {
+  flex-grow: 0;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+/* Flex küçülme oranı (flex-shrink) */
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.shrink-1 {
+  flex-shrink: 1;
+}
+
+/* Flex temeli (flex-basis) */
+.basis-auto {
+  flex-basis: auto;
+}
+
+.basis-0 {
+  flex-basis: 0;
+}
+
+.basis-full {
+  flex-basis: 100%;
+}
+
+/* Genel gap sınıfları */
+.gap-0 {
+  gap: 0;
+}
+
+.gap-1 {
+  gap: 0.25rem; /* 4px */
+}
+
+.gap-2 {
+  gap: 0.5rem; /* 8px */
+}
+
+.gap-3 {
+  gap: 1rem; /* 16px */
+}
+
+.gap-4 {
+  gap: 1.5rem; /* 24px */
+}
+
+.gap-5 {
+  gap: 2rem; /* 32px */
+}
+/*! end::FlexBox */
+
+/*! begin::Form */
+/* Form Container */
+.form {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  text-align: start;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Form Input */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Readonly Input */
+.form-group input[readonly] {
+  background-color: #e9ecef;
+  border-color: #ddd;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+/*! end::Form */
+
+/*! begin::Offcanvas */
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: -350px;
+  width: 350px;
+  height: 100%;
+  transition: left 0.3s ease;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+}
+
+.offcanvas-start {
+  left: -350px;
+}
+.offcanvas-end {
+  left: unset;
+  right: -350px;
+}
+
+.offcanvas.show {
+  left: 0;
+}
+.offcanvas.offcanvas-start.show {
+  left: 0;
+}
+.offcanvas.offcanvas-end.show {
+  left: unset;
+  right: 0;
+}
+
+.offcanvas-header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offcanvas-title {
+  margin: 0;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.offcanvas-body {
+  padding: 15px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+/*! end::Offcanvas */
