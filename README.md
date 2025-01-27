@@ -2,8 +2,6 @@
 
 Bu proje, MapTracking uygulamasının frontend kısmıdır ve React ile geliştirilmiştir. Harita özellikleriyle etkileşim kurmak için bir kullanıcı arayüzü sağlar.
 
-Proje tanıtım videosu: https://www.youtube.com/watch?v=O-LpAGU4PMI
-
 ## Özellikler
 - OpenLayers kullanarak harita ve özellikleri gösterme
 - Kimlik doğrulama ve yetkilendirme
